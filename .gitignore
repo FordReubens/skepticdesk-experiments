@@ -1,0 +1,10 @@
+# corpora are fetched, not redistributed (run voynich/fetch_data.py)
+*/data/
+data/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
