@@ -11,13 +11,13 @@ def get(url):
 def save(name, data):
     (DATA / name).write_bytes(data); print(f"  saved {name} ({len(data)} bytes)")
 
-print("1/4 Voynich ZL EVA transliteration (voynich.nu)")
+print("1/5 Voynich ZL EVA transliteration (voynich.nu)")
 save("ZL3b-n.txt", get("http://www.voynich.nu/data/ZL3b-n.txt"))
 
-print("2/4 Latin control: Caesar, De Bello Gallico (Project Gutenberg #218)")
+print("2/5 Latin control: Caesar, De Bello Gallico (Project Gutenberg #218)")
 save("latin_dbg.txt", get("https://www.gutenberg.org/cache/epub/218/pg218.txt"))
 
-print("3/4 Latin recipe control: Apicius, De re coquinaria (The Latin Library)")
+print("3/5 Latin recipe control: Apicius, De re coquinaria (The Latin Library)")
 parts = []
 for i in range(1, 6):
     html = get(f"https://www.thelatinlibrary.com/apicius/apicius{i}.shtml").decode("latin-1", "ignore")
@@ -28,7 +28,10 @@ for i in range(1, 6):
     parts.append(f"### BOOK {i}\n" + txt); time.sleep(1)
 save("apicius_books.txt", "\n".join(parts).encode("utf-8"))
 
-print("4/4 Bengalese finch song (Koumura & Okanoya 2016, via NickleDave repo)")
+print("4/5 Bengalese finch song (Koumura & Okanoya 2016, via NickleDave repo)")
 save("birdsong_Bird0.xml", get("https://raw.githubusercontent.com/NickleDave/birdsong-recognition-dataset/main/tests/test_data/Bird0/Annotation.xml"))
+
+print("5/5 Pseudo-Lullian alchemical Latin: Raymundi Lulli Testamentum, Cologne 1566 (Internet Archive ARes25626 OCR)")
+save("pseudolull_testamentum.txt", get("https://archive.org/download/ARes25626/ARes25626_djvu.txt"))
 
 print("done -> ./data/")

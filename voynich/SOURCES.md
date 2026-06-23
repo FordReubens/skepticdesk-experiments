@@ -21,3 +21,6 @@ We do not redistribute them; each keeps its own terms and attribution.
 Method references cited in the analyses: Brown et al. (1992) class-based n-gram
 models; Timm & Schinner (2019) self-citation; Montemurro & Zanette (2013);
 Rugg (2004); Suzuki, Buck & Tyack (2006); Kershenbaum et al. (2016).
+
+## Pseudo-Lullian alchemical Latin (control)
+- *Raymundi Lulli Testamentum*, Cologne 1566 — Internet Archive item `ARes25626`, OCR full text (`ARes25626_djvu.txt`). Used as a genuine Lullist-tradition alchemical Latin corpus to test whether the Voynich resembles alchemical Latin more than ordinary Latin (it does not).
