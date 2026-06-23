@@ -19,6 +19,7 @@ python fetch_data.py          # downloads the corpora from their original source
 python voynich_parse_stats.py # reproduce the baseline anomalies (h2 ≈ 2.15, etc.)
 python voynich_recursive.py   # the recursive self-citation model
 python voynich_reversible.py  # the reversible-cipher battery (roundtrip-verified)
+python voynich_bacon_methods.py # Roger Bacon's concealment methods applied to Latin
 # ...and the rest
 ```
 
